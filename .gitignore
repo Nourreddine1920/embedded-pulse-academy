@@ -1,0 +1,27 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vite/
+
+# Environment files (may contain secrets)
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Firmware build artefacts (labs are compiled outside this repo)
+*.o
+*.elf
+*.map
+*.exe
