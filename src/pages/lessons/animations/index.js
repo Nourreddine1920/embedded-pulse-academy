@@ -8,6 +8,7 @@ import SignedUnsignedCompare from "./SignedUnsignedCompare";
 import SignExtension from "./SignExtension";
 import TypeWidthExplorer from "./TypeWidthExplorer";
 import WrapWheel from "./WrapWheel";
+import rtosAnimations from "./rtos";
 
 /**
  * Animations usable from lesson Markdown with a fenced block:
@@ -16,6 +17,8 @@ import WrapWheel from "./WrapWheel";
  *   ```
  */
 const animations = {
+  // Part B (FreeRTOS): registered per module in ./rtos, keys prefixed "rtos-"
+  ...rtosAnimations,
   "type-width-explorer": TypeWidthExplorer,
   "promotion-complement": PromotionComplement,
   "signed-unsigned-compare": SignedUnsignedCompare,
