@@ -16,3 +16,13 @@ body {
 button, input {
   font: inherit;
 }
+
+/* Code must show exactly what you type: no "->" arrows or "0x" → "0×" ligatures. */
+code,
+pre,
+kbd,
+samp,
+.font-mono {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
+}
