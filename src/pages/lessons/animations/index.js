@@ -1,4 +1,9 @@
+import BitOpsPlayground from "./BitOpsPlayground";
+import FieldRmw from "./FieldRmw";
+import FlagClear from "./FlagClear";
 import PromotionComplement from "./PromotionComplement";
+import RmwRace from "./RmwRace";
+import ShiftLab from "./ShiftLab";
 import SignedUnsignedCompare from "./SignedUnsignedCompare";
 import SignExtension from "./SignExtension";
 import TypeWidthExplorer from "./TypeWidthExplorer";
@@ -16,6 +21,12 @@ const animations = {
   "signed-unsigned-compare": SignedUnsignedCompare,
   "wrap-wheel": WrapWheel,
   "sign-extension": SignExtension,
+  // A0.2
+  "bit-ops-playground": BitOpsPlayground,
+  "field-rmw": FieldRmw,
+  "rmw-race": RmwRace,
+  "flag-clear": FlagClear,
+  "shift-lab": ShiftLab,
 };
 
 export default animations;
