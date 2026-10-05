@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Embedded Pulse Academy">
+  <rect width="64" height="64" rx="14" fill="#020617"/>
+  <g stroke="#22d3ee" stroke-width="3" stroke-linecap="round">
+    <path d="M20 8v8M32 8v8M44 8v8M20 48v8M32 48v8M44 48v8M8 20h8M8 32h8M8 44h8M48 20h8M48 32h8M48 44h8"/>
+  </g>
+  <rect x="14" y="14" width="36" height="36" rx="6" fill="#0f172a" stroke="#22d3ee" stroke-width="3"/>
+  <path d="M18 33h8l3-9 5 17 4-12 2 4h6" fill="none" stroke="#a5f3fc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

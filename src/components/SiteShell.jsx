@@ -21,9 +21,7 @@ const SiteShell = ({ children }) => {
       <header className="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6 lg:px-8">
           <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-cyan-400/15 ring-1 ring-cyan-400/40">
-              <Icon name="Cpu" size={16} />
-            </span>
+            <img src="/logo.svg" alt="" width="32" height="32" className="h-8 w-8 rounded-lg" />
             <span className="hidden sm:inline">Embedded Pulse Academy</span>
             <span className="sm:hidden">Embedded Pulse</span>
           </Link>
