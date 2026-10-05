@@ -65,11 +65,56 @@ const SiteShell = ({ children }) => {
       <div className="flex-1">{children}</div>
 
       <footer className="border-t border-slate-800 bg-slate-950">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p>Embedded Pulse Academy · STM32 &amp; FreeRTOS from first principles to production.</p>
-          <p className="flex items-center gap-2">
-            <Icon name="Cpu" size={14} /> Reference board: NUCLEO-F446RE
-          </p>
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.5fr_1fr_1fr] lg:px-8">
+          <div>
+            <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
+              <img src="/logo.svg" alt="" width="28" height="28" className="h-7 w-7 rounded-md" />
+              Embedded Pulse Academy
+            </Link>
+            <p className="mt-4 max-w-sm text-sm leading-6 text-slate-400">
+              STM32 bare-metal and FreeRTOS from first principles to production, with labs you can build and verify on a NUCLEO-F446RE.
+            </p>
+            <p className="mt-4 flex items-center gap-2 text-xs text-slate-500">
+              <Icon name="Cpu" size={14} /> Reference board: NUCLEO-F446RE · Cortex-M4F
+            </p>
+          </div>
+
+          <nav aria-label="Learn">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-300">Learn</h2>
+            <ul className="mt-4 space-y-2.5 text-sm">
+              <li><Link to="/lessons" className="text-slate-400 hover:text-cyan-300">Curriculum</Link></li>
+              <li><Link to="/lessons/A0.1" className="text-slate-400 hover:text-cyan-300">Section A · Bare-metal</Link></li>
+              <li><Link to="/lessons/B0.1" className="text-slate-400 hover:text-cyan-300">Section B · FreeRTOS</Link></li>
+            </ul>
+          </nav>
+
+          <nav aria-label="Project">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-300">Project</h2>
+            <ul className="mt-4 space-y-2.5 text-sm">
+              <li>
+                <a href="https://github.com/Nourreddine1920/embedded-pulse-academy" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-slate-400 hover:text-cyan-300">
+                  <Icon name="Github" size={14} /> Source on GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Nourreddine1920" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-slate-400 hover:text-cyan-300">
+                  <Icon name="User" size={14} /> Author
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div className="border-t border-slate-800/80">
+          <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+            <p>© {new Date().getFullYear()} Embedded Pulse Academy. All rights reserved.</p>
+            <p>
+              Designed &amp; developed by{" "}
+              <a href="https://github.com/Nourreddine1920" target="_blank" rel="noopener noreferrer" className="font-medium text-slate-300 hover:text-cyan-300">
+                Noureddine AWLED BRAHIM
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </div>
